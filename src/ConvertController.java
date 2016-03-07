@@ -6,7 +6,7 @@ public class ConvertController {
 	
 	private ConvertView theView;
 	private ConvertModel theModel;
-	private String msg;
+	private String operation;
 	
 	public ConvertController(ConvertView theView, ConvertModel theModel){
 		
@@ -28,8 +28,8 @@ public class ConvertController {
 				try{
 							firstNumber = theView.getFirstNumber();
 							System.out.println(firstNumber);
-							System.out.println(msg);
-							switch(msg){
+							System.out.println(operation);
+							switch(operation){
 								case "Celsius to Fahrenheit" :
 									theModel.celsiusToFahrenheit(firstNumber);
 									theView.setCalcSolution(theModel.getConversionValue());
@@ -54,7 +54,7 @@ public class ConvertController {
 		public void actionPerformed(ActionEvent e) {			
 			if(e.getSource() == theView.getOperationsList() ){
 					JComboBox cb = (JComboBox)e.getSource();
-					 msg = (String)cb.getSelectedItem();
+					 operation = (String)cb.getSelectedItem();
 					obj.actionPerformed(e);
 			}//if	
 		}//actionPerformed()

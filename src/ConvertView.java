@@ -46,8 +46,8 @@ public class ConvertView extends JFrame{
 			return Integer.parseInt(calcSolution.getText());
 		}
 		
-		public void setCalcSolution(double solution){
-			calcSolution.setText(Double.toString(solution));
+		public void setCalcSolution(String solution){
+			calcSolution.setText(solution);
 			
 		}
 		
