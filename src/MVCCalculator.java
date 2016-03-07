@@ -2,12 +2,11 @@
 public class MVCCalculator {
 
 	public static void main(String[] args) {
-		
-			CalculatorView theView = new CalculatorView();
 			
-			CalculatorModel theModel = new CalculatorModel();
+			ConvertView theView = new ConvertView(); 
+			ConvertModel theModel = new ConvertModel();
+			ConvertController theController = new ConvertController(theView, theModel);
 			
-			CalculatorController theController = new CalculatorController(theView, theModel);
 			
 			theView.setVisible(true);
 			

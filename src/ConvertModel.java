@@ -1,4 +1,4 @@
-public class CalculatorModel {
+public class ConvertModel {
 	
 		private double conversionValue;
 		
