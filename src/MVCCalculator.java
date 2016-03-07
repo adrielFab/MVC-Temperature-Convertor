@@ -1,4 +1,6 @@
-
+/**
+ * @author Adriel Fabella
+ */
 public class MVCCalculator {
 
 	public static void main(String[] args) {
@@ -6,7 +8,6 @@ public class MVCCalculator {
 			ConvertView theView = new ConvertView(); 
 			ConvertModel theModel = new ConvertModel();
 			ConvertController theController = new ConvertController(theView, theModel);
-			
 			
 			theView.setVisible(true);
 			

@@ -1,11 +1,14 @@
+/**
+ * @author Adriel Fabella
+ */
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class ConvertView extends JFrame{
 			
-		private JTextField firstNumber = new JTextField (10);
-		private JTextField calcSolution = new JTextField(10);
+		private JTextField firstNumber = new JTextField (10);//user input
+		private JTextField calcSolution = new JTextField(10);//result displayed in a text field
 		private JLabel label = new JLabel("First Number: ");
 		private JButton button = new JButton("Result");
 		
@@ -51,6 +54,10 @@ public class ConvertView extends JFrame{
 			
 		}
 		
+		
+		/*
+		 * Two listeners - One for the combo box and the other for the button
+		 */
 		void addButtonListener(ActionListener listenerForButton){
 				button.addActionListener(listenerForButton);
 		}
